@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>humburger2</title>
+<link rel="stylesheet" href="https://cdnjs.cloundflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css">
+<style type="text/css">
+#body{
+    padding: 0a;margin: o;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    overflow-x: hidden;
+}
+#main{
+    background-color: rgb(121, 133, 170);
+    width: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 8px;
+    z-index: 1s;
+    overflow: auto;
+    box-sizing: border-box;
+}
+#cover{
+    background-color: #000;
+    opacity: .6;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: none;
+    z-index: 2;
+}
+#menu{
+    background-color: rgb(17, 39, 138);
+    color: #fff;
+    position: absolute;
+    top: 0;
+    left: -160px;
+    padding: 8px;
+    width: 180px;
+    min-height: 100%;
+    z-index: 3;
+    box-sizing: border-box;
+    transition:  .4s;
+}
+#open,#close{
+    float: left;
+    cursor: pointer;
+}
+#cover.menu-open{
+    display: block;
+}
+#menu.menu-open{
+    left: 0;
+}
+</style>
+</head>
+<body>
+    <div id="menu">
+        <i id="fa fa-taimes" id="close"></i>
+        <ul>
+        <li>menu1</li>
+        <li>menu2</li>
+        <li>menu3</li>
+        <li>menu4</li>
+        <li>menu5</li>
+        </ul>
+    </div>
+    <div id="main">
+        <i class="fa fa-bars" id="open"></i>
+        <h1>Keboz</h1>
+<p>Keboz keboz keboz keboz keboz keboz keboz</p>
+<p>Keboz keboz keboz keboz keboz keboz keboz</p>
+<p>Keboz keboz keboz keboz keboz keboz keboz</p>
+<p>Keboz keboz keboz keboz keboz keboz keboz</P>
+<p>Keboz keboz keboz keboz keboz keboz keboz</P>
+<p>Keboz keboz keboz keboz keboz keboz keboz</P>
+<p>Keboz keboz keboz keboz keboz keboz keboz</P>
+<p>Keboz keboz keboz keboz keboz keboz keboz</P>
+<p>Keboz keboz keboz keboz keboz keboz keboz</P>
+    </div>
+    <div id="cover"></div>
+    <script>
+        'use strict'
+
+        const menu = document.getElementById('menu')
+        const cover= document.getElementById('cover');
+
+        const menu = document.getElementById('menu')
+        const cover = document.getElementById('cover')
+
+        open.addEventListener('mouseover',() =>{
+                menu.className='menu-open';
+                cover.className='menu-open';
+        });
+        close.addEventListener('mouseleave',() => {
+                menu.className='';
+                cover.className='';
+        });
+    </script>
+</body>
+</html>

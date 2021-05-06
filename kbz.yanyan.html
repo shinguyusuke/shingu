@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>DOM操作の基本</title>
+</head>
+<body>
+    <botton id="textchange">テキストの変更</botton>
+<h1>楽しいjavascript</h1>
+<p id="target">こんにちは。ケボズ。。。</p>
+<p>こんにちは。ケボズ。。。</p>
+<p>こんにちは。ケボズ。。。</p>
+<script>
+    'use strict'
+/* const textchange = () => {
+    document.querySelector('h1').textContent = "Changed";
+  /*   document.querySelector('#target').textContent="changed" */
+/*     document.getElementById('target').textContent="changed"
+    document.querySelectorAll('p')[1].textContent="changed" */
+/* }/* /* a *//*  */
+
+document.getElementById('textchange').addEventListener('click',() => {
+    document.getElementById('target').textContent = "changed!!";
+});
+</script>
+</body>
+</html>

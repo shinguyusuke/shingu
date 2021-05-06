@@ -1,8 +1,13 @@
- p{
+ p.keboz1{
      color: aqua;
  }
-h1{
-    color: orange;
-    font-size: 50pt;
+p#keboz2{
+    color: plum;
+}
+.company{
+    font-size: larger;
     font-weight: bold;
 }
+  h1{ 
+       color: orange;
+    font-size: 50pt;
